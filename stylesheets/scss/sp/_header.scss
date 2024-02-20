@@ -1,0 +1,30 @@
+/* ------------------------------
+  header.scss SP
+------------------------------ */
+
+.header {
+  position: sticky;
+  z-index: 2;
+  top: -4px;
+  padding: 10px 20px;
+  background: $white;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    height: 44px;
+  }
+
+  &__button {
+    @include button;
+    width: 120px;
+    height: auto;
+    padding: 10px;
+  }
+}

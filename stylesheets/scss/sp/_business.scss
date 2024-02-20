@@ -1,0 +1,25 @@
+/* ------------------------------
+  business.scss PC
+------------------------------ */
+
+.business {
+  margin-bottom: 60px;
+  scroll-margin-top: 64px;
+}
+
+.business-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__image {
+    text-align: center;
+
+    img {
+      width: 80%;
+      height: auto;
+      border-radius: $radius;
+      object-fit: cover;
+    }
+  }
+}

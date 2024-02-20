@@ -1,0 +1,32 @@
+/* ------------------------------
+  business.scss PC
+------------------------------ */
+
+.business {
+  margin-bottom: 90px;
+  scroll-margin-top: 106px;
+
+  &__inner {
+    @include pc-innerwidth;
+  }
+}
+
+.business-box {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  &__content {
+    flex: 2;
+    max-width: 400px;
+  }
+
+  &__image {
+    flex: 1;
+
+    img {
+      border-radius: $radius;
+      object-fit: cover;
+    }
+  }
+}

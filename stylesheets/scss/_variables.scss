@@ -1,0 +1,36 @@
+/* ------------------------------
+  variables.scss
+------------------------------ */
+
+// フォントファミリー
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap";
+
+$font-family: "Noto Sans JP", sans-serif;
+
+// フォントウェイト
+$normal: 400;
+$bold: 700;
+
+// 色
+$white: #fff;
+$black: #000;
+$gray: #e4e4e4;
+$link: #031633;
+
+// メイン色
+// $other: #EEEEEE;
+$bg: #f7fbff;
+$main: #365486;
+$main-bg: #e5efff;
+
+// radius
+$radius: 10px;
+
+
+// line-height
+$lh-normal: 1.5;
+$lh-large: 2;
+
+
+
+

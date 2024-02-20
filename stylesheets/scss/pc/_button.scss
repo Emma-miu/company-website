@@ -1,0 +1,80 @@
+/* ------------------------------
+  button.scss PC
+------------------------------ */
+
+@mixin button() {
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 64px;
+  padding: 20px;
+  border-radius: 50px;
+  background: $main;
+  color: $white;
+  font-weight: $bold;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button {
+  @include button;
+
+  &--link {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 28px;
+      right: 30px;
+      width: 18px;
+      height: 9px;
+      background: image-url("/ico/right-arrow.svg");
+    }
+  }
+
+  &--tel {
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-right: 12px;
+      background: image-url("/ico/tel.svg");
+    }
+  }
+
+  &--email {
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 13.2px;
+      margin-right: 12px;
+      background: image-url("/ico/email.svg");
+    }
+  }
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.button-anchor {
+  @include button;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border: 3px solid $main;
+  background: $white;
+  color: $main;
+}
+

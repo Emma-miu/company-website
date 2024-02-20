@@ -1,0 +1,101 @@
+/* ------------------------------
+  recruit.scss SP
+------------------------------ */
+
+.recruit {
+  background: $main-bg;
+}
+
+.recruit-box {
+
+  &__content {
+    @include sp-innerwidth;
+    padding: vw(40) vw(20) vw(45);
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-weight: $bold;
+  }
+
+  &__button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+}
+
+.recruit-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 8px 0 40px;
+  padding: 13px 30px;
+  border-radius: $radius;
+  background: $main-bg;
+
+  &__item {
+    color: $link;
+    font-weight: $bold;
+  }
+}
+
+.recruit-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    border-radius: $radius;
+    background: $main-bg;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 75px;
+    color: $main;
+    font-size: 20px;
+    font-weight: $bold;
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  &__content {
+    min-width: 202px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: $heading03;
+  }
+
+  &__desc {
+    text-align: left;
+
+    span {
+      color: $main;
+      font-weight: $bold;
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+/* ------------------------------
+  hero.scss PC
+------------------------------ */
+
+.hero {
+  position: relative;
+  height: 800px;
+  margin: 8px 0 120px 150px;
+  border-radius: $radius 0 0 $radius;
+  background-image: image-url("/common/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-box {
+  position: absolute;
+  bottom: 75px;
+  left: -100px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  background: $white;
+
+  &__text {
+    font-size: $heading01;
+    font-weight: $bold;
+  }
+}

@@ -1,0 +1,120 @@
+/* ------------------------------
+  recruit.scss PC
+------------------------------ */
+
+.recruit {
+  height: 574px;
+  overflow-x: hidden;
+  background: $main-bg;
+
+  &__inner {
+    @include pc-innerwidth;
+    position: relative;
+  }
+}
+
+.recruit-box {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 40px;
+
+  &__content {
+    width: 475px;
+  }
+
+  &__image {
+    width: 1020px;
+  }
+
+  &__text {
+    margin-bottom: 42px;
+    font-size: $font-large;
+  }
+
+  &__button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.recruit-link {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0;
+  padding: 13px 30px;
+  border-radius: $radius;
+  background: $main-bg;
+
+  &__item {
+    color: $link;
+    font-weight: $bold;
+  }
+}
+
+.recruit-flow {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: calc((100% - 40px) / 3);
+    max-width: 340px;
+    padding: 10px 40px 25px;
+    border-radius: $radius;
+    background: $main-bg;
+    text-align: center;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: calc((100% - 80px) / 2);
+        right: -60px;
+        width: 80px;
+        height: 80px;
+        background: image-url("/ico/recruit-arrow.svg");
+      }
+    }
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: $main;
+    font-size: 28px;
+    font-weight: $bold;
+
+    span {
+      font-size: 40px;
+    }
+  }
+
+  &__icon {
+    width: 60px;
+    margin: 0 auto 30px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: $heading02;
+  }
+
+  &__desc {
+    text-align: left;
+
+    span {
+      color: $main;
+      font-weight: $bold;
+    }
+  }
+}

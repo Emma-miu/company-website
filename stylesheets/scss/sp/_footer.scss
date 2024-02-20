@@ -1,0 +1,15 @@
+/* ------------------------------
+  footer.scss SP
+------------------------------ */
+
+.footer {
+  box-sizing: border-box;
+  background: $white;
+
+  &__text {
+    padding: vw(14) vw(20);
+    font-size: $font-small;
+    font-weight: $bold;
+    text-align: center;
+  }
+}

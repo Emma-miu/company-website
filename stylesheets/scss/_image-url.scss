@@ -1,0 +1,10 @@
+/* ------------------------------
+  image-url.scss
+------------------------------ */
+
+// rails の image-url に合わせる
+@function image-url($path) {
+  @return url("../images/#{$path}");
+}
+
+

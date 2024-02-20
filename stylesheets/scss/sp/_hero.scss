@@ -1,0 +1,26 @@
+/* ------------------------------
+  hero.scss SP
+------------------------------ */
+
+.hero {
+  position: relative;
+  height: vw(200);
+  margin: vw(8) 0 vw(55) vw(20);
+  border-radius: $radius 0 0 $radius;
+  background-image: image-url("/common/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-box {
+  position: absolute;
+  bottom: vw(26);
+  left: vw(-20);
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: $white;
+
+  &__text {
+    font-weight: $bold;
+  }
+}

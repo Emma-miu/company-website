@@ -1,0 +1,15 @@
+/* ------------------------------
+  footer.scss PC
+------------------------------ */
+
+.footer {
+  box-sizing: border-box;
+  background: $white;
+
+  &__text {
+    padding: 14px 20px;
+    font-size: $font-small;
+    font-weight: $bold;
+    text-align: center;
+  }
+}

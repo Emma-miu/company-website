@@ -1,0 +1,71 @@
+/* ------------------------------
+  base.scss SP
+------------------------------ */
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: $bg;
+  color: $black;
+  font-family: $font-family;
+  font-size: $font-base;
+  font-weight: $normal;
+  line-height: $lh-normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+@mixin sp-innerwidth {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  &__inner {
+    @include sp-innerwidth;
+  }
+}
+
+.main-top {
+  &__inner {
+    @include sp-innerwidth;
+  }
+}
+
+// text
+
+.text {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--line {
+    line-height: $lh-large;
+  }
+}
+
+// ly
+
+.ly-section {
+  margin-bottom: 60px;
+  scroll-margin-top: 64px;
+}
+
+.access-map {
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+

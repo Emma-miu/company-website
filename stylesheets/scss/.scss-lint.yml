@@ -1,0 +1,64 @@
+scss_files: "**/*.scss"
+
+linters:
+  NameFormat:
+    enabled: false
+
+  EmptyLineBetweenBlocks:
+    enabled: false
+
+  ColorVariable:
+    enabled: false
+
+  SingleLinePerSelector:
+    enabled: false
+
+  SelectorFormat:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  NestingDepth:
+    max_depth: 6
+
+  PropertySortOrder:
+    order: smacss
+
+  StringQuotes:
+    style: double_quotes
+
+  LeadingZero:
+    enabled: true
+    style: include_zero
+
+  # インデントのルールを統一する
+  Indentation:
+    enabled: true
+    # ネストされてないルールセットの自由なインデントを許可しない
+    allow_non_nested_indentation: false
+    character: space
+    width: 2
+#  QualifyingElement:
+#    exclude:
+#      - 'stylesheets/scss/_normalize.scss'
+
+#  VendorPrefix:
+#    exclude:
+#      - 'stylesheets/scss/_normalize.scss'
+
+#  DuplicateProperty:
+#    exclude:
+#      - 'stylesheets/scss/_normalize.scss'
+
+#  PseudoElement:
+#    exclude:
+#      - 'stylesheets/scss/_mixins.scss'
+
+#  IdSelector:
+#    exclude:
+#      - 'file.scss'
+
+#  SelectorDepth:
+#    exclude:
+#      - 'file.scss'

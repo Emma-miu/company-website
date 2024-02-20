@@ -1,0 +1,39 @@
+/* ------------------------------
+  message.scss SP
+------------------------------ */
+
+.message {
+  margin-bottom: 60px;
+  scroll-margin-top: 64px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  &__image {
+    width: 50%;
+    margin: 0 auto;
+
+    img {
+      border-radius: $radius;
+    }
+  }
+}
+
+.message-seal {
+  font-weight: $bold;
+  text-align: right;
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+}

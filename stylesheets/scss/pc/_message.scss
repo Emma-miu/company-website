@@ -1,0 +1,37 @@
+/* ------------------------------
+  message.scss PC
+------------------------------ */
+
+.message {
+  margin-bottom: 90px;
+  scroll-margin-top: 106px;
+
+  &__inner {
+    @include pc-innerwidth;
+    display: flex;
+    gap: 60px;
+  }
+
+  &__image {
+    img {
+      border-radius: $radius;
+    }
+  }
+}
+
+.message-seal {
+  font-weight: $bold;
+  text-align: right;
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+}
+

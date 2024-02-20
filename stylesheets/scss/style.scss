@@ -1,0 +1,32 @@
+// 共通ファイル
+@import "reset", "image-url", "function", "variables";
+
+
+@media screen and (max-width: 959.9px) {
+  // SP first
+  @import "sp/variables", "sp/anchor", "sp/base", "sp/business" ,"sp/button", "sp/footer", "sp/header", "sp/heading", "sp/hero", "sp/message", "sp/recruit", "sp/table";
+
+  .only-sp {
+    display: block;
+  }
+
+  .only-pc {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 960px),
+  print {
+  // PCファイル
+  @import "pc/variables", "pc/anchor", "pc/base", "pc/business", "pc/button", "pc/footer", "pc/header", "pc/heading", "pc/hero", "pc/message", "pc/recruit", "pc/table";
+
+  .only-sp {
+    display: none;
+  }
+
+  .only-pc {
+    display: block;
+  }
+}
+
